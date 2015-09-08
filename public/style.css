@@ -23,20 +23,19 @@ header, .topLeft, .topRight, .middle {
 .downArrow img {
   width: 300px;
   margin: 120px auto 700px auto;
-  /*display: block;*/
-  display: none;
+  display: block;
+  /*display: none;*/
 }
 
 .wrapper {
   width: 960px;
   height: auto;
   margin: 0 auto;
-  /*display: none;*/
 }
 
-/*.top, .middle, .bottom .wrapLeft, .bottom .wrapRight, .projectsHead, .datamapper, .sule, .zap, footer {
+.top, .middle, .bottom .wrapLeft, .bottom .wrapRight, .projectsHead, .datamapper, .sule, .zap, footer {
   display: none;
-}*/
+}
 
 header {
   margin: 6px 0;
