@@ -23,20 +23,19 @@ header, .topLeft, .topRight, .middle {
 .downArrow img {
   width: 300px;
   margin: 120px auto 700px auto;
-  /*display: block;*/
-  display: none;
+  display: block;
+  /*display: none;*/
 }
 
 .wrapper {
   width: 960px;
   height: auto;
   margin: 0 auto;
-  /*display: none;*/
 }
 
-/*.top, .middle, .bottom .wrapLeft, .bottom .wrapRight, .projectsHead, .datamapper, .sule, .zap, footer {
+.top, .middle, .bottom, .projectsHead, .datamapper, .sule, .zap, footer {
   display: none;
-}*/
+}
 
 header {
   margin: 6px 0;
@@ -157,11 +156,11 @@ header img {
 .wrapLeft {
   padding: 10px 30px 0 10px;
   height: 248px;
-  width: 43.8%;
+  width: 44.8%;
   display: inline-block;
   position: relative;
   overflow: hidden;
-  z-index: 8;
+  /*z-index: 8;*/
   border-top: 7px solid #000000;
   border-left: 7px solid #000000;
 }
@@ -203,7 +202,7 @@ header img {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  z-index: 8;
+  /*z-index: 8;*/
   border-bottom: 7px solid #000000;
   border-right: 7px solid #000000;
   text-align: right;
@@ -303,4 +302,114 @@ footer h2 {
 .icon {
   width: 50px;
   display: inline-block;
+}
+
+.thing {
+  font-size: 70px;
+}
+
+/* MODAL SECTION DOWN HERE */
+
+.popup {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popup-inner {
+  max-width: 700px;
+  width: 90%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  z-index: 10;
+}
+
+.popup-close {
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: ease 0.25s all;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  border-radius: 1000px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  text-align: center;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.popup-close:hover {
+  -webkit-transform:translate(50%, -50%) rotate(100deg);
+  transform: translate(50%, -50%) rotate(100deg);
+  background-color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+/* MODAL CONTENT */
+
+.popup .popup-inner a {
+  text-decoration: none;
+}
+
+.languages {
+  text-align: center;
+  margin: 0 auto 80px auto;
+  width: 50%;
+}
+
+.exit {
+  width: 30px;
+  float: right;
+}
+
+.html {
+  width: 120px;
+  height: 90px;
+}
+
+.css {
+  width: 80px;
+  height: 90px;
+}
+
+.js {
+  width: 120px;
+  height: 95px;
+}
+
+.bourbon {
+  width: 100px;
+  height: 100px;
+}
+
+.ruby {
+  width: 100px;
+  height: 100px;
+}
+
+.rails {
+  width: 100px;
+  height: 100px;
+}
+
+.kitty {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
 }
