@@ -11,6 +11,21 @@ body {
   letter-spacing: 1px;
 }
 
+.downArrow img {
+  width: 300px;
+  margin: 120px auto 700px auto;
+  display: block;
+}
+
+.top, .middle, .bottom, .projectsHead, .datamapper, .sule, .zap, footer {
+  display: none;
+}
+
+.wrapper {
+  height: auto;
+  margin: 0 auto;
+}
+
 h1, h2 {
   font-family: 'Bangers', cursive;
   color: #006A31;
@@ -19,6 +34,7 @@ h1, h2 {
 header, .topLeft, .topRight, .middle {
   background-color: #FFFFFF;
 }
+
 header img {
   display: block;
   width: 100%;
@@ -31,8 +47,6 @@ header img {
   background-image: url("images/speech2.png");
   background-repeat: no-repeat;
   background-size: 406px 381px;
-  display: inline-block;
-  margin: 0 5px 0 0;
   border: 7px solid black;
   background-color: #E0E0E0;
 }
@@ -42,13 +56,252 @@ header img {
   font-size: 22px;
 }
 
+.topLeft img {
+  display: block;
+}
+
+.topRight {
+  height: 630px;
+  border: 7px solid black;
+}
+
+.topRight p {
+  font-size: 21px;
+}
+
+.middle {
+  border: 7px solid black;
+  background-image: url("images/batcompy.png");
+  background-repeat: no-repeat;
+  font-family: 'Roboto Mono';
+}
+
+.middle h1 {
+  font-family: 'Roboto Mono';
+  text-align: center;
+  color: #4A5A8C;
+}
+
+.frontEnd, .backEnd, .tools {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  color: #4A5A8C;
+}
+
+.frontEnd h2, .backEnd h2, .tools h2 {
+  font-family: 'Roboto Mono';
+  text-align: center;
+  color: #4A5A8C;
+}
+
+.frontEnd ul, .backEnd ul, .tools ul {
+  color: #4A5A8C;
+}
+
+.wrapLeft {
+  height: 248px;
+}
+
+.innerWrap ul {
+  display: inline-block;
+}
+
+.pokeball {
+  width: 165px;
+}
+
+.wrapRight {
+  height: 248px;
+  text-align: right;
+}
+
+.wrapRight p {
+  padding-left: 40px;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.projectsHead {
+  border: 7px solid #000000;
+  background-color: #FFFFFF;
+}
+
+.projectsHead h1 {
+  font-size: 75px;
+  text-align: center;
+  margin: 0;
+}
+
+.datamapper, .sule, .zap {
+  border: 7px solid #000000;
+  background-color: #FFFFFF;
+}
+
+.datamapper {
+  background-image: url("images/projects/datamapper2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.sule {
+  background-image: url("images/projects/sule2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.zap {
+  background-image: url("images/projects/zap2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.datamapper img, .sule img, .zap img {
+  width: 20%;
+  display: block;
+}
+
+footer {
+  border: 7px solid #000000;
+  background-color: #FFFFFF;
+}
+
+footer h2 {
+  text-align: center;
+  margin: 5px;
+  font-size: 40px;
+}
+
+.contacts {
+  width: 310px;
+  margin: 0 auto;
+}
+
+.contact {
+  display: inline-block;
+  margin: 5px 25px;
+}
+
+.icon {
+  width: 50px;
+  display: inline-block;
+}
+
+.thing {
+  font-size: 70px;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popup-inner {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  z-index: 10;
+  border: 7px solid black;
+}
+
+.popup-close {
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: ease 0.25s all;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  border-radius: 1000px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  text-align: center;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.popup-close:hover {
+  -webkit-transform:translate(50%, -50%) rotate(100deg);
+  transform: translate(50%, -50%) rotate(100deg);
+  background-color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+/* MODAL CONTENT */
+
+.popup .popup-inner a {
+  text-decoration: none;
+}
+
+.languages {
+  text-align: center;
+  margin: 0 auto 80px auto;
+  width: 50%;
+}
+
+.exit {
+  width: 30px;
+  float: right;
+}
+
+.html {
+  width: 120px;
+  height: 90px;
+}
+
+.css {
+  width: 80px;
+  height: 90px;
+}
+
+.js {
+  width: 120px;
+  height: 95px;
+}
+
+.bourbon {
+  width: 100px;
+  height: 100px;
+}
+
+.ruby {
+  width: 100px;
+  height: 100px;
+}
+
+.rails {
+  width: 100px;
+  height: 100px;
+}
+
+.kitty {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
 @media (min-width: 1000px) {
-  .downArrow img {
+  /*.downArrow img {
     width: 300px;
     margin: 120px auto 700px auto;
     display: block;
-    /*display: none;*/
-  }
+  }*/
 
   .wrapper {
     width: 960px;
@@ -56,9 +309,9 @@ header img {
     margin: 0 auto;
   }
 
-  .top, .middle, .bottom, .projectsHead, .datamapper, .sule, .zap, footer {
+  /*.top, .middle, .bottom, .projectsHead, .datamapper, .sule, .zap, footer {
     display: none;
-  }
+  }*/
 
   header {
     margin: 6px 0;
@@ -79,7 +332,7 @@ header img {
   .topLeft {
     width: 48%;
     height: 630px;
-    background-image: url("images/speech2.png");
+    background-image: url('images/speech2.png');
     background-repeat: no-repeat;
     background-size: 406px 381px;
     display: inline-block;
@@ -118,21 +371,14 @@ header img {
   }
 
   .middle {
-    border: 7px solid black;
-    background-image: url("images/batcompy.png");
-    background-repeat: no-repeat;
     background-position: -633px -132px;
     background-size: 222%;
-    font-family: 'Roboto Mono';
     margin-bottom: 6px;
   }
 
   .middle h1 {
-    font-family: 'Roboto Mono';
-    text-align: center;
     margin-top: 40px;
     margin-bottom: 0;
-    color: #4A5A8C;
     font-size: 55px;
   }
 
@@ -147,26 +393,12 @@ header img {
   }
 
   .frontEnd, .backEnd, .tools {
-    display: inline-block;
-    vertical-align: top;
     margin: 0 10px;
-    font-size: 20px;
-    color: #4A5A8C;
-  }
-
-  .frontEnd h2, .backEnd h2, .tools h2 {
-    font-family: 'Roboto Mono';
-    text-align: center;
-    color: #4A5A8C;
-  }
-
-  .frontEnd ul, .backEnd ul, .tools ul {
-    color: #4A5A8C;
   }
 
   .bottom {
-    margin-bottom: 6px;
     height: 265px;
+    margin-bottom: 6px;
   }
 
   .wrapLeft {
@@ -176,7 +408,6 @@ header img {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    /*z-index: 8;*/
     border-top: 7px solid #000000;
     border-left: 7px solid #000000;
   }
@@ -200,25 +431,18 @@ header img {
   }
 
   .innerWrap ul {
-    display: inline-block;
     width: 140px;
     vertical-align: top;
     font-size: 17px;
     margin-top: 0;
   }
 
-  .pokeball {
-    width: 165px;
-  }
-
   .wrapRight {
     padding: 10px 10px 0 30px;
-    height: 248px;
     width: 44.8%;
     display: inline-block;
     position: relative;
     overflow: hidden;
-    /*z-index: 8;*/
     border-bottom: 7px solid #000000;
     border-right: 7px solid #000000;
     text-align: right;
@@ -235,8 +459,6 @@ header img {
     top: 0%;
     right: -9%;
     border: 7px solid #000000;
-    /*background-image: url("images/hungry.png");
-    background-repeat: no-repeat;*/
   }
 
   .wrapRight p {
@@ -246,191 +468,170 @@ header img {
   }
 
   .projectsHead {
-    border: 7px solid #000000;
-    background-color: #FFFFFF;
     margin-bottom: 6px;
   }
 
-  .projectsHead h1 {
-    font-size: 75px;
-    text-align: center;
-    margin: 0;
-  }
 
   .datamapper, .sule, .zap {
-    border: 7px solid #000000;
-    background-color: #FFFFFF;
     margin-bottom: 6px;
-    height: 476px;
   }
 
   .datamapper {
     height: 533px;
-    background-image: url("images/projects/datamapper2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 
   .sule {
     height: 468px;
-    background-image: url("images/projects/sule2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 
   .zap {
     height: 472px;
-    background-image: url("images/projects/zap2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 
   .datamapper img, .sule img, .zap img {
-    width: 20%;
-    display: block;
     margin: 160px auto;
-  }
-
-  footer {
-    border: 7px solid #000000;
-    background-color: #FFFFFF;
-  }
-
-  footer h2 {
-    text-align: center;
-    margin: 5px;
-    font-size: 40px;
-  }
-
-  .contacts {
-    width: 310px;
-    margin: 0 auto;
-  }
-
-  .contact {
-    display: inline-block;
-    margin: 5px 25px;
-  }
-
-  .icon {
-    width: 50px;
-    display: inline-block;
   }
 
   .thing {
     font-size: 70px;
   }
+}
 
-  /* MODAL SECTION DOWN HERE */
+@media (max-width: 800px) {
+  .wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
 
-  .popup {
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.75);
+  .topLeft {
+    height: 630px;
+    background-image: url("images/speech2.png");
+    background-repeat: no-repeat;
+    background-size: 406px 381px;
+    display: block;
+    margin: 5px 0px 5px 0px;
+    border: 7px solid black;
+    background-color: #E0E0E0;
+  }
+
+  .topLeft p {
+    margin: 47px 214px 89px 98px;
+    font-size: 23px;
+  }
+
+  .topLeft img {
+    width: 279px;
+    margin-left: 305px;
+  }
+
+  .topRight {
+    height: 370px;
+    margin-bottom: 5px;
+  }
+
+  .topRight img {
+    margin: 65px 0 0 35px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .topRight p {
+    margin: 0 0 0 45px;
+    width: 290px;
+    display: inline-block;
+  }
+
+  .middle {
+    background-position: -757px -124px;
+    background-size: 346%;
+    margin-bottom: 5px;
+    height: 590px;
+  }
+
+  .middle h1 {
+    margin: 48px 0 25px 0;
+    font-size: 45px;
+  }
+
+  .frontEnd {
+    margin: 0 0 0 24px;
+  }
+
+  .frontEnd h2, .backEnd h2, .tools h2 {
+    margin: 0;
+  }
+
+  .frontEnd ul, .backEnd ul, .tools ul {
+    margin-top: 5px;
+  }
+
+  .bottom {
+    margin-bottom: 5px;
+  }
+
+  .wrapLeft {
+    background-color: #FFFFFF;
+    border: 7px solid #000000;
+    margin-bottom: 5px;
+  }
+
+  .innerWrap {
+    margin: 20px 0 0 95px;
+  }
+
+  .innerWrap h3 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+
+  }
+
+  .innerWrap ul {
+    width: 200px;
+    vertical-align: top;
+    font-size: 21px;
+    margin-top: 0;
+  }
+
+  .wrapRight {
+    border: 7px solid #000000;
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+    padding: 10px 10px 0 0;
+  }
+
+  .projectsHead {
+    margin-bottom: 5px;
+  }
+
+  .datamapper, .sule, .zap {
+    margin-bottom: 5px;
+  }
+
+  .datamapper {
+    height: 373px
+  }
+
+  .sule {
+    height: 330px
+  }
+
+  .zap {
+    height: 290px;
+  }
+
+  .datamapper img {
+    margin: 120px auto 0 auto;
+  }
+
+  .sule img {
+    margin: 105px auto 0 auto;
+  }
+
+  .zap img {
+    margin: 80px auto 80px auto;
   }
 
   .popup-inner {
-    max-width: 700px;
-    width: 90%;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
-    border-radius: 3px;
-    background-color: #FFFFFF;
-    z-index: 10;
+    width: 80%;
   }
-
-  .popup-close {
-    width: 30px;
-    height: 30px;
-    padding-top: 4px;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transition: ease 0.25s all;
-    -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, -50%);
-    border-radius: 1000px;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: 20px;
-    text-align: center;
-    line-height: 100%;
-    color: #FFFFFF;
-  }
-
-  .popup-close:hover {
-    -webkit-transform:translate(50%, -50%) rotate(100deg);
-    transform: translate(50%, -50%) rotate(100deg);
-    background-color: rgba(0, 0, 0, 1);
-    text-decoration: none;
-  }
-
-  /* MODAL CONTENT */
-
-  .popup .popup-inner a {
-    text-decoration: none;
-  }
-
-  .languages {
-    text-align: center;
-    margin: 0 auto 80px auto;
-    width: 50%;
-  }
-
-  .exit {
-    width: 30px;
-    float: right;
-  }
-
-  .html {
-    width: 120px;
-    height: 90px;
-  }
-
-  .css {
-    width: 80px;
-    height: 90px;
-  }
-
-  .js {
-    width: 120px;
-    height: 95px;
-  }
-
-  .bourbon {
-    width: 100px;
-    height: 100px;
-  }
-
-  .ruby {
-    width: 100px;
-    height: 100px;
-  }
-
-  .rails {
-    width: 100px;
-    height: 100px;
-  }
-
-  .kitty {
-    width: 100px;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-@media (min-width: 800) {
-
 }
