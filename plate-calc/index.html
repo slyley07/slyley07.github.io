@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Plate Calculator
+    </title>
+
+    <link rel="stylesheet" href="public/style.css" media="screen" title="no title">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Barbell Plate Calculator
+      </h1>
+
+      <h3>
+        by Bradley Showalter
+      </h3>
+
+      <div class="weights">
+        <div class="chex">
+          <p>
+            2.5
+          </p>
+
+          <div class="roundedOne">
+            <input id="2.5" data-num="two" type="checkbox" name="two" value="2.5">
+            <label for="2.5"></label>
+          </div>
+        </div>
+
+        <div class="chex">
+          <p>
+            5
+          </p>
+
+          <div class="roundedOne">
+            <input id="5" data-num="five" type="checkbox" name="five" value="5" checked>
+            <label for="5"></label>
+          </div>
+        </div>
+
+        <div class="chex">
+          <p>
+            10
+          </p>
+
+          <div class="roundedOne">
+            <input id="10" data-num="ten" type="checkbox" name="ten" value="10" checked>
+            <label for="10"></label>
+          </div>
+        </div>
+
+        <div class="chex">
+          <p>
+            25
+          </p>
+
+          <div class="roundedOne">
+            <input id="25" data-num="twenty_five" type="checkbox" name="twenty_five" value="25" checked>
+            <label for="25"></label>
+          </div>
+        </div>
+
+        <div class="chex">
+          <p>
+            35
+          </p>
+
+          <div class="roundedOne">
+            <input id="35" data-num="thirty_five" type="checkbox" name="thirty_five" value="35" checked>
+            <label for="35"></label>
+          </div>
+        </div>
+
+        <div class="chex">
+          <p>
+            45
+          </p>
+
+          <div class="roundedOne">
+            <input id="45" data-num="forty_five" type="checkbox" name="forty_five" value="45" checked>
+            <label for="45"></label>
+          </div>
+        </div>
+
+        <div class="chex">
+          <p>
+            55
+          </p>
+
+          <div class="roundedOne">
+            <input id="55" data-num="fifty_five" type="checkbox" name="fifty_five" value="55">
+            <label for="55"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="inputs">
+        <div class="ind_input">
+          <label for="weight">
+            Target Weight:
+          </label>
+
+          <input id="weight" type="number" name="name" placeholder="a number" required >
+        </div>
+
+        <div class="ind_input">
+          <label for="barbell">
+            Weight of Barbell:
+          </label>
+
+          <input id='barbell' type="number" name="name" placeholder="a number" required >
+        </div>
+
+
+        <input id="calc" type="button" name="name" value="Calculate">
+
+        <input type="reset" name="name" value="Reset">
+      </div>
+
+      <div id="output">
+        <p>
+          <span id="plated_0"></span><span class="bar"></span> <span id="plated_1"></span>
+        </p>
+      </div>
+    </div>
+
+
+
+    <script src="public/script.js">
+    </script>
+  </body>
+</html>
