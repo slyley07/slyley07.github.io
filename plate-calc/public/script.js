@@ -32,15 +32,17 @@ function getWeight() {
   var weight = document.getElementById('weight').value;
   var bar_weight = document.getElementById('barbell').value;
 
-  weight = weight - bar_weight;
+  var new_weight = weight - bar_weight;
 
-  weight = weight / 2;
-  if (weight > 0 && weight <= 1268) {
-    calc(weight);
+  new_weight = new_weight / 2;
+
+  // console.log((new_weight * 2)+ bar_weight);
+  if (new_weight > 0 && weight <= 1268 ) {
+    calc(new_weight);
   } else if (weight > 1268) {
     output.innerHTML = '<p class="error">Chill out dude.</p>'
     output.style.display = 'block';
-  } else if (weight === 0) {
+  } else if (new_weight === 0) {
     output.innerHTML = '<p class="error">Just use the bar</p>'
     output.style.display = 'block';
   } else {
