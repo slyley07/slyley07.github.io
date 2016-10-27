@@ -74,6 +74,10 @@ function calc(target_weight) {
         output.innerHTML = '<p class="error">Cannot plate</p>'
         output.style.display = 'block';
         return;
+      } else if (checked_plates.includes(2.5) && target_weight !== 2.5) {
+        output.innerHTML = '<p class="error">Cannot plate</p>'
+        output.style.display = 'block';
+        return;
       }
   } else if (target_weight > 0) {
     b++;
