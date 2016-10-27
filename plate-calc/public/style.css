@@ -175,9 +175,11 @@
   padding: 65px 15px;
 }
 
-.bar {
+#bar {
   width: 240px;
   height: 20px;
   border: 1px solid #A9A9A9;
   background-color: #A9A9A9;
+  color: #FFFFFF;
+  font-size: 18px;
 }

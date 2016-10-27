@@ -15,7 +15,7 @@ function getWeight() {
   checked_plates = [];
   b = 0;
 
-  output.innerHTML = '<p><span id="plated_0"></span><span class="bar"></span> <span id="plated_1"></span></p>';
+  output.innerHTML = '<p><span id="plated_0"></span><span id="bar"></span> <span id="plated_1"></span></p>';
 
   document.getElementById('plated_0').innerHTML = '';
   document.getElementById('plated_1').innerHTML = '';
@@ -96,6 +96,8 @@ function calc(target_weight) {
 
       document.getElementById('plated_0').innerHTML += '<span class="sing_plate ' + klass + '">' + plates[t] + '</span>';
     }
+
+    document.getElementById('bar').innerHTML = document.getElementById('barbell').value;
 
     output.style.display = 'block';
 
