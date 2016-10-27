@@ -69,17 +69,16 @@ function calc(target_weight) {
       calc(target_weight);
       return;
     }
+  } else if (target_weight > 0 && target_weight < 5) {
+      if (!checked_plates.includes(2.5)) {
+        output.innerHTML = '<p class="error">Cannot plate</p>'
+        output.style.display = 'block';
+        return;
+      }
   } else if (target_weight > 0) {
-    if (!checked_plates.includes(2.5) && target_weight % 1 > 0) {
-      output.innerHTML = '<p class="error">Cannot plate</p>'
-      output.style.display = 'block';
-
-      return;
-    } else {
-      b++;
-      calc(target_weight);
-      return;
-    }
+    b++;
+    calc(target_weight);
+    return;
   } else {
     for (var w = 0; w < plates.length; w++) {
       var klass = document.getElementById(plates[w] + "").dataset.num;
