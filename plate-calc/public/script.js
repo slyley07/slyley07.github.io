@@ -35,10 +35,12 @@ function getWeight() {
   weight = weight - bar_weight;
 
   weight = weight / 2;
-  if (weight > 0) {
+  if (weight > 0 && weight <= 1268) {
     calc(weight);
+  } else if (weight > 1268) {
+    output.innerHTML = '<p class="error">Chill out dude.</p>'
+    output.style.display = 'block';
   } else if (weight === 0) {
-
     output.innerHTML = '<p class="error">Just use the bar</p>'
     output.style.display = 'block';
   } else {
