@@ -99,9 +99,8 @@ function calc(target_weight) {
 
     output.style.display = 'block';
 
-    console.log("plates: " + plates);
+    // console.log("plates: " + plates);
   }
-  console.log(b);
 }
 
 document.getElementById('calc').addEventListener('click', getWeight);
