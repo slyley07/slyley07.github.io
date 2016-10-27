@@ -3,6 +3,11 @@
   src: url("fonts/Suplexmentary Comic NC.ttf");
 }
 
+* {
+  text-decoration: none;
+  /*color: black;*/
+}
+
 body {
   background-image: url("images/halftone5.png");
   background-size: 220px;

@@ -1,0 +1,104 @@
+{
+  "projects": [
+    {
+      "name": "Zap",
+      "desc": "lorem",
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bourbon",
+        "Ruby",
+        "Rails"
+      ],
+      "github": "https://github.com/slyley07/zap",
+      "website": null
+    },
+    {
+      "name": "Sule",
+      "desc": "Are you tired of how fast-paced the world is? Use this interactive capsule site, to save your memories and have a loved one open them upon a set date.",
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bourbon",
+        "Ruby",
+        "Rails"
+      ],
+      "github": "https://github.com/slyley07/sule",
+      "website": null
+    },
+    {
+      "name": "Datamapper",
+      "desc": "A site for earth scientists to post the plots that their data are taken from and collaborate with other scientists. This implements the Google Maps API, JavaScript, and AJAX so each user's plot is saved immediately and dynamically.",
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bourbon",
+        "Ruby",
+        "Rails"
+      ],
+      "github": "https://github.com/slyley07/datamapper",
+      "website": null
+    },
+    {
+      "name": "Ask Dr. Apa",
+      "desc": "A blog for Dr. Michael Apa; who travels the world helping people find their brightest smiles.",
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Wordpress"
+      ],
+      "github": null,
+      "website": "http://www.askdrapa.com/"
+    },
+    {
+      "name": "Chalogy Beauty",
+      "desc": "",
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Angular",
+        "SASS"
+      ],
+      "github": null,
+      "website": "http://chalogybeauty.com/"
+    },
+    {
+      "name": "Flirt",
+      "desc": "",
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "github": null,
+      "website": "http://flashes.flirtcosmetics.com/"
+    },
+    {
+      "name": "Now New York",
+      "desc": "",
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "github": null,
+      "website": "http://now-newyork.com/"
+    },
+    {
+      "name": "Platey",
+      "desc": "",
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "github": "https://github.com/slyley07/platey",
+      "website":
+    }
+  ]
+}
