@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Zap",
-      "desc": "lorem",
+      "desc": "Batman vs Superman! Captain America vs Ironman! With this simple microblog you can talk about your favorite superheroes with all of your comic book friends.",
       "languages": [
         "HTML",
         "CSS",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Ask Dr. Apa",
-      "desc": "A blog for Dr. Michael Apa; who travels the world helping people find their brightest smiles.",
+      "desc": "A blog for Dr. Michael Apa; who travels the world helping people find their brightest smiles. I built the entire website from scratch using webframes provided by a graphic designer.",
       "languages": [
         "HTML",
         "CSS",
@@ -56,20 +56,33 @@
     },
     {
       "name": "Chalogy Beauty",
-      "desc": "",
+      "desc": "A new makeup and beauty line from Chalogy in South Korea. My main focuses were implementing the shopping cart functionality, creating the Saturday Skin brand and ingredients pages and the About and Innovation pages.",
       "languages": [
         "HTML",
         "CSS",
         "JavaScript",
         "Angular",
-        "SASS"
+        "SASS",
+        "Shopify"
       ],
       "github": null,
       "website": "http://chalogybeauty.com/"
     },
     {
+      "name": "Design+Shop",
+      "desc": "The shop for CMYK+White. I mostly maintain and update the site, adding in new pages and features as requested.",
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Shopify"
+      ],
+      "github": null,
+      "website": "https://www.designplusshop.com/"
+    },
+    {
       "name": "Flirt",
-      "desc": "",
+      "desc": "Landing pages for the new Flirt Flashes campaign by Est&eacute;e Lauder. I built the sites from scratch for a mobile-only audience following designs provided to me.",
       "languages": [
         "HTML",
         "CSS",
@@ -80,7 +93,7 @@
     },
     {
       "name": "Now New York",
-      "desc": "",
+      "desc": "The website and corresponding Chrome extension, built and designed completely from scratch with my coworker. My main focuses were the weather, to-do, links, news, and settings modules. Both the website and the extension use the same languages.",
       "languages": [
         "HTML",
         "CSS",
@@ -91,14 +104,15 @@
     },
     {
       "name": "Platey",
-      "desc": "",
+      "desc": "A simple weight calculator for figuring out which plates to put on a barbell at the gym. Built and designed by myself.",
       "languages": [
         "HTML",
         "CSS",
-        "JavaScript"
+        "JavaScript",
+        "Chrome Storage"
       ],
       "github": "https://github.com/slyley07/platey",
-      "website":
+      "website": "http://botanybrad.com/platey/platey.html"
     }
   ]
 }

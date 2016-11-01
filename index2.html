@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Bradley Showalter&rsquo;s Porfolio Page" />
+
+    <title>Bradley&rsquo;s Adventures in Coding</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="public/style2.css" media="screen" title="no title" charset="utf-8">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+  </head>
+  <body>
+    <button type="button" id="deleteCookie" name="button">Delete Cookie</button>
+
+    <button type="button" id="add_bg" name="button">Add Beech Grove</button>
+
+    <button type="button" id="add_purdue" name="button">Add Purdue</button>
+
+    <div class="card" id="one_a">
+      <h1>
+        What&rsquo;s your name?
+      </h1>
+
+      <input type="text" id="user_name_input" name="name" value="">
+      <input type="submit" id="user_name_submit" name="name" value="yo">
+    </div>
+
+    <div class="card" id="one_b">
+      <h1>
+        Welcome back, <span id="user_name_a"></span>!
+      </h1>
+    </div>
+
+    <div class="card" id="two">
+      <h1>
+        Hi <span id="user_name_b"></span>. I&rsquo;m Bradley. I&rsquo;m a web dev and I build sites. (Including this one!)
+      </h1>
+
+      <button type="button" id="next_two" onclick="show_next_card('two')" name="button">Next</button>
+    </div>
+
+    <div class="card" id="three">
+      <h3>
+        I was born here
+      </h3>
+
+      <!-- Add in map with pin in it -->
+
+      <div id="map">
+
+      </div>
+
+      <h3>
+        I went to college here
+      </h3>
+
+      <!-- Add pin in map -->
+
+      <h3>
+        I currently live here
+      </h3>
+
+      <!-- Add pin in map -->
+
+      <h3>
+        I&rsquo;ve also lived in all of these places.
+      </h3>
+
+      <!-- Add tons of pins in map -->
+    </div>
+
+    <div class="card" id="four">
+      <h1>
+        Where do you live?
+      </h1>
+
+      <!-- Add in map -->
+    </div>
+
+    <div class="card" id="five">
+      <h1>
+        Do you like any of these colors?
+      </h1>
+
+      <!-- Color settings -->
+      <select class="" name="">
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="Blue">Blue</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
+      </select>
+    </div>
+
+    <div class="card" id="six">
+      <h1>
+        Now that the introductions are out of the way, what would you like to know about me?
+      </h1>
+
+      <h3>
+        <a href="#">
+          Information/Skills
+        </a>
+      </h3>
+
+      <h3>
+        <a href="#">
+          Projects
+        </a>
+      </h3>
+
+      <h3>
+        <a href="#">
+          Contact me!
+        </a>
+      </h3>
+    </div>
+
+    <div class="card" id="info_one">
+      <h1>
+        Basic Information
+      </h1>
+
+      <p>
+        I was born and raised in Indianapolis and went to school at Purdue University, where I studied Plant Biology.
+      </p>
+
+      <p>
+        After college, I moved around a bit and explored different careers and cities before settling on New York and web development. To start my career as a web dev, I attended the New York Code+Design Academy for three months in 2015.
+      </p>
+
+      <p>
+        After finishing the Web Dev Intensive at NYCDA, I was hired on as a Teaching Assistant. I taught several cohorts of students before moving into the industry myself.
+      </p>
+
+      <p>
+        I'm currently a web dev at CMYK+White in Midtown. I've worked on a variety of projects using a range of technologies and languages, all adding to my coding abilities.
+      </p>
+    </div>
+
+    <div class="card" id="info_two">
+      <h1>
+        Skills
+      </h1>
+      <div class="skills">
+        <div class="front_end">
+          <h3>
+            Front End
+          </h3>
+
+          <ul>
+            <li>
+              HTML
+            </li>
+
+            <li>
+              CSS
+            </li>
+
+            <li>
+              JavaScript
+            </li>
+
+            <li>
+              jQuery
+            </li>
+
+            <li>
+              SASS
+            </li>
+
+            <li>
+              Bourbon
+            </li>
+
+            <li>
+              Bootstrap
+            </li>
+
+            <li>
+              AJAX
+            </li>
+          </ul>
+        </div>
+
+        <div class="back_end">
+          <h3>
+            Back End
+          </h3>
+
+          <ul>
+            <li>
+              Ruby
+            </li>
+
+            <li>
+              Sinatra
+            </li>
+
+            <li>
+              Rails
+            </li>
+
+            <li>
+              SQLite3
+            </li>
+
+            <li>
+              RSpec
+            </li>
+
+            <li>
+              ActiveRecord
+            </li>
+
+            <li>
+              JSON
+            </li>
+          </ul>
+        </div>
+
+        <div class="Other">
+          <h2>
+            Other
+          </h2>
+
+          <ul>
+            <li>
+              Wordpress
+            </li>
+
+            <li>
+              Shopify
+            </li>
+
+            <li>
+              Terminal
+            </li>
+
+            <li>
+              GitHub
+            </li>
+
+            <li>
+              Git
+            </li>
+
+            <li>
+              GIMP
+            </li>
+
+            <li>
+              Markdown
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="info_three">
+
+    </div>
+
+    <div class="card" id="projects">
+
+    </div>
+
+    <div class="card" id="contacts">
+      <div class="contact">
+        <a href="https://www.github.com/slyley07" target="_blank">
+          <img src="public/images/icons/github_icon.png" alt="GitHub" class="icon" />
+        </a>
+      </div>
+
+      <div class="contact">
+        <a href="https://linkedin.com/in/bradleyshowalter" target="_blank">
+          <img src="public/images/icons/linkedin_icon.png" alt="LinkedIn" class="icon" />
+        </a>
+      </div>
+
+      <div class="contact">
+        <a href="mailto:showalter.bradley+porfolio@gmail.com" target="_blank">
+          <img src="public/images/icons/envelope-closed-8x.png" alt="Email" class="icon" />
+        </a>
+      </div>
+    </div>
+
+
+
+    <script>
+      // var bg = {lat: 39.7140142, lng: -86.1002435}
+      // var purdue = {lat: 40.4237054, lng: -86.9233833};
+
+
+
+      	//
+
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPo5CuQmAU2wo5DXQJlJ1ettt2nnVFUzU&callback=initialize">
+    </script>
+
+    <script type="text/javascript" src="public/script2.js">
+    </script>
+
+
+  </body>
+</html>

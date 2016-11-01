@@ -53,24 +53,25 @@ function getWeight() {
 
 
 function calc(target_weight) {
-  // console.log("before if weight: " + target_weight);
-
   if (target_weight >= checked_plates[b]) {
-    // console.log("plate: " + checked_plates[b]);
+    console.log(checked_plates[b]);
     target_weight = target_weight - checked_plates[b];
     plates.push(checked_plates[b]);
-    // console.log(target_weight >= checked_plates[b]);
     if (target_weight >= checked_plates[b]) {
-      // console.log(b);
       calc(target_weight);
     } else {
-      // console.log("weight is not more than current plate: " + target_weight);
       b++;
       calc(target_weight);
       return;
     }
   } else if (target_weight > 0 && target_weight < 5) {
-      if (!checked_plates.includes(2.5)) {
+    console.log(checked_plates[b]);
+    console.log(target_weight);
+    if (target_weight < checked_plates[b]) {
+      b++;
+      calc(target_weight);
+      return;
+    } else if (!checked_plates.includes(2.5)) {
         output.innerHTML = '<p class="error">Cannot plate</p>'
         output.style.display = 'block';
         return;
@@ -88,7 +89,7 @@ function calc(target_weight) {
       var klass = document.getElementById(plates[w] + "").dataset.num;
       document.getElementById('plated_1').innerHTML += '<span class="sing_plate ' + klass + '">' + plates[w] + '</span>';
     }
-    //
+
     plates.reverse();
 
     for (var t = 0; t < plates.length; t++) {
@@ -106,3 +107,10 @@ function calc(target_weight) {
 }
 
 document.getElementById('calc').addEventListener('click', getWeight);
+
+
+document.getElementById('reset').addEventListener('click', function() {
+  document.getElementById('weight').value = null;
+  document.getElementById('barbell').value = null;
+  document.getElementById('output').style.display = 'none';
+})
