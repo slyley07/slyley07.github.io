@@ -4,9 +4,85 @@ var checked_plates = [];
 
 var b = 0;
 
-var possible_plates = ['2.5','5','10','25','35','45','55'];
+var lb_plates = ['2.5','5','10','25','35','45','55'];
+
+var kg_plates = ['1.5', '2', '2.5', '5','10', '15', '20', '25'];
+
+var plate_names = {'1.5': ['one', false],
+                    '2': ['two', false],
+                    '2.5': ['two_five', false],
+                    '5': ['five', true],
+                    '10': ['ten', true],
+                    '15': ['fifteen', true],
+                    '20': ['twenty', true],
+                    '25': ['twenty_five', true],
+                    '35': ['thirty_five', true],
+                    '45': ['forty_five', true],
+                    '55': ['fifty_five', false]
+                  };
+
+var possible_plates = [];
 
 var output = document.getElementById('output');
+
+function make_chex(arr) {
+  var parent = document.getElementById('weights');
+  parent.innerHTML = '';
+  for (var a = 0; a < arr.length; a++) {
+    var chex_div = document.createElement('div')
+    chex_div.className = 'chex';
+
+    var chex_p = document.createElement('p');
+    chex_p.innerHTML = arr[a];
+
+    var round_div = document.createElement('div');
+    round_div.className = 'roundedOne';
+
+
+    var chex_input = document.createElement('input');
+    chex_input.id = arr[a];
+    chex_input.dataset.num = plate_names[arr[a]][0];
+    chex_input.type = "checkbox";
+    console.log(plate_names[arr[a]][0]);
+
+    if (plate_names[arr[a]][1]) {
+      chex_input.setAttribute('checked', plate_names[arr[a]][1]);
+    }
+
+    var chex_label = document.createElement('label');
+    chex_label.setAttribute('for', arr[a]);
+
+    round_div.appendChild(chex_input);
+    round_div.appendChild(chex_label);
+
+    chex_div.appendChild(chex_p);
+    chex_div.appendChild(round_div);
+    parent.appendChild(chex_div);
+  }
+
+}
+
+function lb_or_kg() {
+  var meas = document.getElementById('measurement').value;
+  output.innerHTML =  '';
+  if (meas === 'lb') {
+    possible_plates = lb_plates;
+
+    make_chex(possible_plates)
+    console.log(possible_plates);
+    document.getElementById('weights').style.display = 'flex';
+
+  } else {
+    possible_plates = kg_plates;
+    make_chex(possible_plates);
+    document.getElementById('weights').style.display = 'flex';
+    console.log(possible_plates);
+  }
+}
+
+document.getElementById('measurement').addEventListener('change', lb_or_kg);
+
+
 
 var plate_arr = document.getElementsByClassName('plated');
 

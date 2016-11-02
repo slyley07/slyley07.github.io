@@ -3,11 +3,12 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+
     <title>
       Plate Calculator
     </title>
 
-    <link rel="stylesheet" href="public/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="public/style2.css" media="screen" title="no title">
 
   </head>
   <body>
@@ -20,8 +21,24 @@
         by Bradley Showalter
       </h3>
 
-      <div class="weights">
-        <div class="chex">
+      <div class="lb_or_kg">
+        <select id="measurement" name="">
+          <option disabled selected value>
+             --units--
+          </option>
+
+          <option value="lb">
+            lb
+          </option>
+
+          <option value="kg">
+            kg
+          </option>
+        </select>
+      </div>
+
+      <div id="weights">
+        <!-- <div class="chex">
           <p>
             2.5
           </p>
@@ -96,7 +113,7 @@
             <input id="55" data-num="fifty_five" type="checkbox" name="fifty_five" value="55">
             <label for="55"></label>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="inputs">
