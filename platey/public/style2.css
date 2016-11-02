@@ -17,8 +17,6 @@
 .container .lb_or_kg select {
   border: 1px solid black;
   border-radius: 0;
-  width: 75px;
-  height: 30px;
   margin: 30px auto;
   display: block;
   background-color: #FFFFFF; }
@@ -113,6 +111,10 @@
       color: #FFFFFF; }
 
 @media screen and (min-width: 480px) {
+  .lb_or_kg select {
+    width: 75px;
+    height: 30px; }
+
   .sing_plate {
     font-size: 16px;
     margin: 0 2px; }
@@ -170,13 +172,8 @@
     height: 36px;
   }*/
   .lb_or_kg select {
-    border: 1px solid black;
-    border-radius: 0;
     width: 85px;
     height: 50px;
-    margin: 30px auto;
-    display: block;
-    background-color: #FFFFFF;
     font-size: 20px;
     padding: 4px; }
 
