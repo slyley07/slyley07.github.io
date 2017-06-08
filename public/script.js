@@ -57,6 +57,55 @@ var projects = [
       "website": "http://chalogybeauty.com/"
     },
     {
+      "name": "Ask Dr. Apa",
+      "className": "askdrapa",
+      "desc": "A blog for Dr. Michael Apa, who travels the world helping people find their brightest smiles. I built the entire website following designs provided by a graphic designer and hosted it with Wordpress.",
+      "github": null,
+      "images": [
+        "askdrapa_1.png",
+        "askdrapa_2.png"
+      ],
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Wordpress"
+      ],
+      "website": "http://www.askdrapa.com/"
+    },
+    {
+      "name": "Now New York",
+      "className": "nny",
+      "desc": "The website and corresponding Chrome extension, built and designed completely from scratch with my coworker. My main focuses were the weather, to-do, links, news, and settings modules. Both the website and the extension use the same languages.",
+      "github": null,
+      "images": [
+        "nny_1.png",
+        "nny_2.png"
+      ],
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "website": "http://now-newyork.com/"
+    },
+    {
+      "name": "Flirt",
+      "className": "flirt",
+      "desc": "Landing pages for the new Flirt Flashes campaign by Est&eacute;e Lauder. I built the sites from scratch for a mobile-only audience following designs provided to me.",
+      "github": null,
+      "images": [
+        "flirt_1.png",
+        "flirt_2.png"
+      ],
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "website": "http://flashes.flirtcosmetics.com/"
+    },
+    {
       "name": "Platey",
       "className": "platey",
       "desc": "A simple weight calculator for figuring out which plates to put on a barbell at the gym. Built and designed by myself.",
@@ -90,55 +139,9 @@ var projects = [
     //   ],
     //   "website": "https://www.designplusshop.com/"
     // },
-    {
-      "name": "Flirt",
-      "className": "flirt",
-      "desc": "Landing pages for the new Flirt Flashes campaign by Est&eacute;e Lauder. I built the sites from scratch for a mobile-only audience following designs provided to me.",
-      "github": null,
-      "images": [
-        "flirt_1.png",
-        "flirt_2.png"
-      ],
-      "languages": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "website": "http://flashes.flirtcosmetics.com/"
-    },
-    {
-      "name": "Now New York",
-      "className": "nny",
-      "desc": "The website and corresponding Chrome extension, built and designed completely from scratch with my coworker. My main focuses were the weather, to-do, links, news, and settings modules. Both the website and the extension use the same languages.",
-      "github": null,
-      "images": [
-        "nny_1.png",
-        "nny_2.png"
-      ],
-      "languages": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "website": "http://now-newyork.com/"
-    },
-    {
-      "name": "Ask Dr. Apa",
-      "className": "askdrapa",
-      "desc": "A blog for Dr. Michael Apa, who travels the world helping people find their brightest smiles. I built the entire website following designs provided by a graphic designer and hosted it with Wordpress.",
-      "github": null,
-      "images": [
-        "askdrapa_1.png",
-        "askdrapa_2.png"
-      ],
-      "languages": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Wordpress"
-      ],
-      "website": "http://www.askdrapa.com/"
-    },
+
+
+
     {
       "name": "Datamapper",
       "className": "datamapper",
@@ -179,10 +182,7 @@ var proj_imgs = function(i, flag) {
 
 var dir = function() {
   var directions = ['up', 'down', 'left', 'right'];
-
   var index = Math.floor(Math.random() * (4 - 1)) + 1;
-
-  console.log(index);
 
   return directions[index];
 }
@@ -215,14 +215,14 @@ $(document).ready(function(){
       //     }).show("slide", {direction: "left"}, 1000);
     }
 
-    if (y > 1200) {
-      $('.megaBottom .projectsHead').slideDown(500);
+    if (y > 1000) {
+      $('.megaBottom, .projectsHead').slideDown();
     }
 
-    var x = 1300
+    var x = 1300;
 
     for (var p = 0; p < projects.length; p++) {
-      if (y > x && $('.' + projects[p].className + '_outer').not(':visible')) {
+      if (y > x && $('.' + projects[p].className + '_outer').not(':visible') && p !== 2 && p !== 3 && p !== 4 && p !== 5) {
         $('.' + projects[p].className + '_outer').show(
           'slide',
           {
@@ -231,11 +231,33 @@ $(document).ready(function(){
           1000
         );
         x += 350;
-      }
+      } else if (y > 1650 && $('.' + projects[p].className + '_outer').not(':visible') && p === 2) {
+        $('.' + projects[p].className + '_outer').show(
+          'slide',
+          {
+            direction: dir()
+          },
+          1000
+        );
+        // x += 350;
+      } else if (y > 2000 && $('.' + projects[p].className + '_outer').not(':visible') && p === 3 && p !== 4 && p !== 5) {
+        $('.megaBottom .project_holder').css({
+          'grid-template-rows': '94px 1fr 1fr 1fr 1fr'
+        });
 
+        $('.' + projects[p].className + '_outer').show(1000);
+      } else if (y > 2200 && $('.' + projects[p].className + '_outer').not(':visible')) {
+        $('.' + projects[p].className + '_outer').show(
+          'slide',
+          {
+            direction: 'down'
+          },
+          1000
+        );
+      }
     }
 
-    var z = 1300 + (350 * (projects.length - 1));
+    var z = 1300 + (350 * (projects.length - 2));
     if (y > z) {
       $('footer'). slideDown(500);
       $('.downArrow').hide('slide', {direction: 'up'}, 500);
@@ -244,7 +266,7 @@ $(document).ready(function(){
 
   for (var i = 0; i < projects.length; i++) {
     // make projects and append them to the megaBottom
-    $('.megaBottom').append(
+    $('.project_holder').append(
       // project
       '<div class="' + projects[i].className + '_outer">' +
         '<div class="' + projects[i].className + '">' +

@@ -212,39 +212,40 @@ header {
       margin-top: 3px; }
 
 .megaBottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 1fr 1fr 1fr 1fr;
-  grid-row-gap: 6px;
-  grid-column-gap: 6px;
-  margin: 0 0 6px; }
-  .megaBottom .projectsHead {
-    border: 7px solid #000000;
-    background-color: #FFFFFF;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2; }
-    .megaBottom .projectsHead h1 {
-      font-size: 75px;
-      text-align: center;
-      margin: 0; }
-  .megaBottom .chalogy_outer {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3; }
-  .megaBottom .askdrapa_outer {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4; }
-  .megaBottom .nny_outer {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4; }
-  .megaBottom .flirt_outer {
-    grid-column: 1 / 2;
-    grid-row: 4 / 6; }
-  .megaBottom .platey_outer {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5; }
-  .megaBottom .datamapper_outer {
-    grid-column: 2 / 3;
-    grid-row: 5 / 6; }
+  display: none; }
+  .megaBottom .project_holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 6px;
+    grid-column-gap: 6px;
+    margin: 0 0 6px; }
+    .megaBottom .project_holder .projectsHead {
+      border: 7px solid #000000;
+      background-color: #FFFFFF;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2; }
+      .megaBottom .project_holder .projectsHead h1 {
+        font-size: 75px;
+        text-align: center;
+        margin: 0; }
+    .megaBottom .project_holder .chalogy_outer {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3; }
+    .megaBottom .project_holder .askdrapa_outer {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4; }
+    .megaBottom .project_holder .nny_outer {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4; }
+    .megaBottom .project_holder .flirt_outer {
+      grid-column: 1 / 2;
+      grid-row: 4 / 6; }
+    .megaBottom .project_holder .platey_outer {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5; }
+    .megaBottom .project_holder .datamapper_outer {
+      grid-column: 2 / 3;
+      grid-row: 5 / 6; }
 
 .datamapper {
   height: 533px;
@@ -439,7 +440,7 @@ footer {
       align-items: center;
       justify-content: center; }
       .popup .popup-inner .full_cara svg {
-        width: 75px;
+        width: 100px;
         height: 75px; }
     .popup .popup-inner .languages {
       text-align: center;
@@ -448,6 +449,8 @@ footer {
       align-items: baseline;
       flex-wrap: wrap;
       justify-content: center; }
+      .popup .popup-inner .languages img {
+        margin: 0 5px; }
 
 .popup:not(flirt_sub) .cara_img {
   width: 500px;
