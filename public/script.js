@@ -213,7 +213,7 @@ $(document).ready(function(){
       $('.megaBottom, .projectsHead').slideDown();
     }
 
-    var x;
+    var x == 1300;
 
     if ($(window).width() > 767) {
       x = 1300;
