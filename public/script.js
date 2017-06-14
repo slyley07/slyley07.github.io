@@ -201,6 +201,7 @@ $(document).ready(function(){
     } else if ($(window).width() < 766) {
       x = 1000;
       $('.downArrow').click(function() {
+        alert('clicked')
         $(window).scrollTop(100);
       })
     }
