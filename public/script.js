@@ -213,11 +213,12 @@ $(document).ready(function(){
       $('.megaBottom, .projectsHead').slideDown();
     }
 
-    var x == 1300;
+    var x;
+    // var x = 1300;
 
     if ($(window).width() > 767) {
       x = 1300;
-    } else ($(window).width() < 766) {
+    } else if ($(window).width() < 766) {
       x = 1000;
     }
 
