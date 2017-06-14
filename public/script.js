@@ -207,12 +207,6 @@ $(document).ready(function(){
 
     if (y > 800) {
       $('.bottom').slideDown(500);
-      // $('.wrapLeft').css({
-      //       display: "inline-block"
-      //     }).show("slide", { direction: "right" }, 1000);
-      // $('.wrapRight').css({
-      //       display: "inline-block"
-      //     }).show("slide", {direction: "left"}, 1000);
     }
 
     if (y > 1000) {
@@ -241,11 +235,13 @@ $(document).ready(function(){
         );
         // x += 350;
       } else if (y > 2000 && $('.' + projects[p].className + '_outer').not(':visible') && p === 3 && p !== 4 && p !== 5) {
-        $('.megaBottom .project_holder').css({
-          'grid-template-rows': '94px 1fr 1fr 1fr 1fr'
-        });
+        // $('.megaBottom .project_holder').css({
+        //   'grid-template-rows': '94px 1fr 1fr 1fr 1fr'
+        // });
 
-        $('.' + projects[p].className + '_outer').show(1000);
+        $('.' + projects[p].className + '_outer').show(
+          1000
+        );
       } else if (y > 2200 && $('.' + projects[p].className + '_outer').not(':visible')) {
         $('.' + projects[p].className + '_outer').show(
           'slide',
@@ -263,6 +259,82 @@ $(document).ready(function(){
       $('.downArrow').hide('slide', {direction: 'up'}, 500);
     }
   });
+
+  // $('.downArrow').click(function() {
+  //   // var y = $(this).scrollTop();
+  //   //
+  //   // if (y > 100) {
+  //     $('.top').slideDown(500);
+  //     if (onces === 0) {
+  //       initMap();
+  //       onces++;
+  //     }
+  //   // }
+  //
+  //   if (y > 500) {
+  //     $('.middle').slideDown(500);
+  //   }
+  //
+  //   if (y > 800) {
+  //     $('.bottom').slideDown(500);
+  //     // $('.wrapLeft').css({
+  //     //       display: "inline-block"
+  //     //     }).show("slide", { direction: "right" }, 1000);
+  //     // $('.wrapRight').css({
+  //     //       display: "inline-block"
+  //     //     }).show("slide", {direction: "left"}, 1000);
+  //   }
+  //
+  //   if (y > 1000) {
+  //     $('.megaBottom, .projectsHead').slideDown();
+  //   }
+  //
+  //   var x = 1300;
+  //
+  //   for (var p = 0; p < projects.length; p++) {
+  //     if (y > x && $('.' + projects[p].className + '_outer').not(':visible') && p !== 2 && p !== 3 && p !== 4 && p !== 5) {
+  //       $('.' + projects[p].className + '_outer').show(
+  //         'slide',
+  //         {
+  //           direction: dir()
+  //         },
+  //         1000
+  //       );
+  //       x += 350;
+  //     } else if (y > 1650 && $('.' + projects[p].className + '_outer').not(':visible') && p === 2) {
+  //       $('.' + projects[p].className + '_outer').show(
+  //         'slide',
+  //         {
+  //           direction: dir()
+  //         },
+  //         1000
+  //       );
+  //       // x += 350;
+  //     } else if (y > 2000 && $('.' + projects[p].className + '_outer').not(':visible') && p === 3 && p !== 4 && p !== 5) {
+  //       // $('.megaBottom .project_holder').css({
+  //       //   'grid-template-rows': '94px 1fr 1fr 1fr 1fr'
+  //       // });
+  //
+  //       $('.' + projects[p].className + '_outer').show(
+  //         1000
+  //       );
+  //     } else if (y > 2200 && $('.' + projects[p].className + '_outer').not(':visible')) {
+  //       $('.' + projects[p].className + '_outer').show(
+  //         'slide',
+  //         {
+  //           direction: 'down'
+  //         },
+  //         1000
+  //       );
+  //     }
+  //   }
+  //
+  //   var z = 1300 + (350 * (projects.length - 2));
+  //   if (y > z) {
+  //     $('footer'). slideDown(500);
+  //     $('.downArrow').hide('slide', {direction: 'up'}, 500);
+  //   }
+  // });
 
   for (var i = 0; i < projects.length; i++) {
     // make projects and append them to the megaBottom
@@ -397,108 +469,3 @@ $(document).ready(function(){
   });
 
 });
-//
-// <div class="datamapper">
-//   <a href="#" class="btn" data-popup-open="popup-1">
-//     <img src="public/images/icons/plus2.png" alt="Datamapper" />
-//   </a>
-// </div>
-//
-// <div class="popup" data-popup="popup-1">
-//   <div class="popup-inner">
-//     <a href="#" data-popup-close="popup-1" class="popup-class">
-//       <img src="public/images/icons/x-8x.png" class="exit" alt="" />
-//     </a>
-//
-//     <h3>
-//       Datamapper
-//     </h3>
-//
-//     <p>
-//       A site for earth scientists to post the plots that their data are taken from and collaborate with other scientists. This implements the Google Maps API, JavaScript, and AJAX so each user's plot is saved immediately and dynamically.
-//     </p>
-//
-//     <div class="languages">
-//       <img src="public/images/icons/html_icon.png" class="html" alt="HTML" />
-//       <img src="public/images/icons/css_icon.png" class="css" alt="CSS" />
-//       <img src="public/images/icons/javascript_icon.png" class="js" alt="JavaScript" />
-//       <img src="public/images/icons/bourbon_icon1.png" class="bourbon" alt="Bourbon" />
-//       <img src="public/images/icons/ruby_icon.png" class="ruby" alt="Ruby" />
-//       <img src="public/images/icons/rails_icon.png" class="rails" alt="Rails" />
-//     </div>
-//
-//     <a href="https://github.com/slyley07/datamapper">
-//       <img src="public/images/icons/github_icon.png" class="kitty" alt="Datamapper GitHub Repo" />
-//     </a>
-//   </div>
-// </div>
-//
-// <div class="sule">
-//   <a href="#" class="btn" data-popup-open="popup-2">
-//     <img src="public/images/icons/plus2.png" alt="Sule" />
-//   </a>
-// </div>
-//
-// <div class="popup" data-popup="popup-2">
-//   <div class="popup-inner">
-//     <a href="#" data-popup-close="popup-2" class="popup-class">
-//       <img src="public/images/icons/x-8x.png" class="exit" alt="" />
-//     </a>
-//
-//     <h3>
-//       Sule
-//     </h3>
-//
-//     <p>
-//       Are you tired of how fast-paced the world is? Use this interactive capsule site, to save your memories and have a loved one open them upon a set date.
-//     </p>
-//
-//     <div class="languages">
-//       <img src="public/images/icons/html_icon.png" class="html" alt="HTML" />
-//       <img src="public/images/icons/css_icon.png" class="css" alt="CSS" />
-//       <img src="public/images/icons/javascript_icon.png" class="js" alt="JavaScript" />
-//       <img src="public/images/icons/bourbon_icon1.png" class="bourbon" alt="Bourbon" />
-//       <img src="public/images/icons/ruby_icon.png" class="ruby" alt="Ruby" />
-//       <img src="public/images/icons/rails_icon.png" class="rails" alt="Rails" />
-//     </div>
-//
-//     <a href="https://github.com/slyley07/sule" target="_blank">
-//       <img src="public/images/icons/github_icon.png" class="kitty" alt="Sule GitHub Repo" />
-//     </a>
-//   </div>
-// </div>
-//
-// <div class="zap">
-//   <a href="#" class="btn" data-popup-open="popup-3">
-//     <img src="public/images/icons/plus2.png" alt="ZAP!" />
-//   </a>
-// </div>
-//
-// <div class="popup" data-popup="popup-3">
-//   <div class="popup-inner">
-//     <a href="#" data-popup-close="popup-3" class="popup-class">
-//       <img src="public/images/icons/x-8x.png" class="exit" alt="" />
-//     </a>
-//
-//     <h3>
-//       Zap!
-//     </h3>
-//
-//     <p>
-//       Batman vs Superman! Captain America vs Ironman! With this simple microblog you can talk about your favorite superheroes with all of your comic book friends.
-//     </p>
-//
-//     <div class="languages">
-//       <img src="public/images/icons/html_icon.png" class="html" alt="HTML" />
-//       <img src="public/images/icons/css_icon.png" class="css" alt="CSS" />
-//       <img src="public/images/icons/javascript_icon.png" class="js" alt="JavaScript" />
-//       <img src="public/images/icons/bourbon_icon1.png" class="bourbon" alt="Bourbon" />
-//       <img src="public/images/icons/ruby_icon.png" class="ruby" alt="Ruby" />
-//       <img src="public/images/icons/rails_icon.png" class="rails" alt="Rails" />
-//     </div>
-//
-//     <a href="https://github.com/slyley07/zap" target="_blank">
-//       <img src="public/images/icons/github_icon.png" class="kitty" alt="Zap GitHub Repo" />
-//     </a>
-//   </div>
-// </div>
