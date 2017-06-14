@@ -193,19 +193,19 @@ $(document).ready(function(){
   $(document).scroll(function() {
     var y = $(this).scrollTop();
 
-    var z;
-
     var x;
 
     if ($(window).width() > 767) {
       x = 1300;
-      z = 100;
+
     } else if ($(window).width() < 766) {
       x = 1000;
-      z = 50;
+      $('.downArrow').click(function() {
+        $(window).scrollTop(100);
+      })
     }
 
-    if (y > z) {
+    if (y > 100) {
       $('.top').slideDown(500);
       if (onces === 0) {
         initMap();
