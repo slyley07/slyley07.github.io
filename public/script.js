@@ -193,7 +193,19 @@ $(document).ready(function(){
   $(document).scroll(function() {
     var y = $(this).scrollTop();
 
-    if (y > 100) {
+    var z;
+
+    var x;
+
+    if ($(window).width() > 767) {
+      x = 1300;
+      z = 100;
+    } else if ($(window).width() < 766) {
+      x = 1000;
+      z = 50;
+    }
+
+    if (y > z) {
       $('.top').slideDown(500);
       if (onces === 0) {
         initMap();
@@ -211,15 +223,6 @@ $(document).ready(function(){
 
     if (y > 1000) {
       $('.megaBottom, .projectsHead').slideDown();
-    }
-
-    var x;
-    // var x = 1300;
-
-    if ($(window).width() > 767) {
-      x = 1300;
-    } else if ($(window).width() < 766) {
-      x = 1000;
     }
 
     for (var p = 0; p < projects.length; p++) {
