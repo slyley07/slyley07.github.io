@@ -213,7 +213,13 @@ $(document).ready(function(){
       $('.megaBottom, .projectsHead').slideDown();
     }
 
-    var x = 1300;
+    var x;
+
+    if ($(window).width() > 767) {
+      x = 1300;
+    } else ($(window).width() < 766) {
+      x = 1000;
+    }
 
     for (var p = 0; p < projects.length; p++) {
       if (y > x && $('.' + projects[p].className + '_outer').not(':visible') && p !== 2 && p !== 3 && p !== 4 && p !== 5) {
