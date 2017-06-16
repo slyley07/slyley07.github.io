@@ -163,11 +163,19 @@ var projects = [
   ];
 
 var proj_imgs = function(i, flag) {
-  var img = document.getElementById('modal_img_' + i)
+  var img = document.getElementById('modal_img_' + i);
   var src = img.src;
+  console.log(src);
+
+  //local
   var sub_str = 'file:///Users/bradley/Desktop/projects/personal/slyley07.github.io/public/images/projects/'
-  // new_src = src.replace(sub_str, '');
+
+  //local
   var index = projects[i].images.indexOf(src.replace(sub_str, ''));
+
+  //online
+  // var index = projects[i].images.indexOf(src);
+
 
   if (index + 1 === projects[i].images.length && flag === 'right') {
     img.src = sub_str + projects[i].images[0];
