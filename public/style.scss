@@ -15,7 +15,7 @@ body {
   font-family: comicThing;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   height: 200vh;
 
   a {
@@ -943,6 +943,245 @@ footer {
     .downArrow {
       img {
         width: 120px;
+        margin: 30px auto 700px;
+      }
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+  .wrapper {
+    width: 480px;
+
+    .top {
+      .inner_top_grid {
+        grid-template-areas: 'f' 'g';
+        grid-column-gap: 0;
+        grid-row-gap: 6px;
+
+        .topLeft {
+          height: auto;
+          grid-template-rows: 40px 160px 171px;
+          grid-template-columns: 50px 142px 20px 96px;
+
+          .speech {
+            width: 250px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+
+          .supes {
+            max-width: 220px;
+          }
+        }
+
+        .topRight {
+          height: auto;
+          padding: 0 0 20px;
+
+          #map {
+            width: 410px;
+            height: 270px;
+          }
+
+          p {
+            font-size: 14px;
+            width: 330px;
+            margin: 0 auto;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .middle {
+      .inner_middle_grid {
+        grid-template-areas: 'a a a' 'b c d';
+        grid-row-gap: 6px;
+        grid-column-gap: 6px;
+
+
+        h1 {
+          font-size: 25px;
+          margin: 0;
+        }
+
+        .frontEnd,
+        .backEnd,
+        .tools {
+          padding: 10px 0;
+
+          h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+          }
+
+          ul {
+            font-size: 14px;
+            width: 110px;
+            margin: 0 auto;
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+
+    .megaBottom {
+      .project_holder {
+        grid-template-areas:
+        'header'
+        'project_one'
+        'project_two project_three'
+        'project_four project_five'
+        'project_four project_six';
+        grid-column-gap: 6px;
+
+        .projectsHead {
+          h1 {
+            font-size: 45px;
+          }
+        }
+
+        .flirt_outer {
+          height: auto;
+        }
+        .chalogy,
+        .askdrapa,
+        .nny,
+        .flirt,
+        .platey,
+        .datamapper {
+          height: 217px;
+
+        }
+        .grid_two .plus_div_2 {
+          height: 80px;
+
+          svg {
+            height: auto;
+            width: 60px;
+          }
+        }
+
+        .flirt {
+          height: 100%;
+        }
+
+        .popup-inner {
+          padding: 10px;
+
+          .exit {
+            width: 20px;
+          }
+
+          h3 {
+            font-size: 20px;
+          }
+
+          .full_cara {
+            svg {
+              width: 100px;
+              height: 35px;
+            }
+
+            .cara_img {
+              width: 400px;
+              height: 280px;
+            }
+          }
+
+          p {
+            font-size: 16px;
+          }
+
+          .languages {
+            margin: 30px auto 20px;
+
+            .html,
+            .css,
+            .javascript {
+              width: 30px;
+              height: 40px;
+            }
+
+            .angular,
+            .shopify,
+            .chrome_storage {
+              width: 40px;
+            }
+
+            .sass,
+            .wordpress,
+            .bourbon,
+            .rails {
+              width: 40px;
+              height: 40px;
+            }
+
+            .ruby {
+              width: 50px;
+              height: 50px;
+            }
+          }
+
+          .kitty {
+            width: 60px;
+          }
+        }
+
+        .flirt_sub {
+          .popup-inner {
+            .full_cara {
+              img {
+                width: 160px;
+                height: 382px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      h2 {
+        font-size: 40px;
+      }
+
+      .contacts {
+        width: 240px;
+        display: grid;
+        grid-template-areas:
+          'a b c';
+        justify-content: space-around;
+
+        .contact {
+          justify-items: center;
+
+          img {
+            width: 30px;
+          }
+
+          &.first {
+            grid-area: 'a';
+          }
+
+          &.second {
+            grid-area: 'b';
+          }
+
+          &.third {
+            grid-area: 'c';
+          }
+        }
+
+      }
+    }
+
+    .downArrow {
+      img {
+        width: 200px;
         margin: 30px auto 700px;
       }
     }
