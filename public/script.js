@@ -190,21 +190,23 @@ var dir = function() {
 
 $(document).ready(function(){
   var onces = 0;
+  var x;
+
+  if ($(window).width() > 767) {
+    x = 1300;
+    console.log('large');
+  } else if ($(window).width() < 766) {
+    console.log('small');
+    // x = 1000;
+    //
+    // $('.downArrow').click(function() {
+    //   alert('clicked')
+    //   $(window).scrollTop(100);
+    // })
+  }
+
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-
-    var x;
-
-    if ($(window).width() > 767) {
-      x = 1300;
-
-    } else if ($(window).width() < 766) {
-      x = 1000;
-      $('.downArrow').click(function() {
-        alert('clicked')
-        $(window).scrollTop(100);
-      })
-    }
 
     if (y > 100) {
       $('.top').slideDown(500);
@@ -268,6 +270,9 @@ $(document).ready(function(){
     if (y > z) {
       $('footer'). slideDown(500);
       $('.downArrow').hide('slide', {direction: 'up'}, 500);
+      $('body').css({
+        'height': 'auto'
+      });
     }
   });
 
