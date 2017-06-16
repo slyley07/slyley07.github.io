@@ -163,6 +163,7 @@ var projects = [
   ];
 
 var proj_imgs = function(i, flag) {
+  console.log('src');
   var img = document.getElementById('modal_img_' + i);
   var src = img.src;
   console.log(src);
