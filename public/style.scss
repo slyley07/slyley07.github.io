@@ -24,6 +24,10 @@ body {
   }
 }
 
+.title {
+  border: $comic-border;
+}
+
 .pointer {
   cursor: pointer;
 }

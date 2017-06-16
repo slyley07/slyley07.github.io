@@ -16,6 +16,9 @@ body {
     color: #000000;
     text-decoration: underline; }
 
+.title {
+  border: 7px solid black; }
+
 .pointer {
   cursor: pointer; }
 
