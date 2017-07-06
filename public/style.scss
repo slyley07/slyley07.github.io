@@ -53,6 +53,7 @@ header,
 }
 
 .downArrow {
+  display: none;
   grid-area: f;
   img {
     width: 300px;
@@ -107,29 +108,40 @@ header {
     }
   }
 
+
+
   .topLeft {
     height: 630px;
-    // background-image: url("images/speech2.png");
-    // background-repeat: no-repeat;
-    // background-size: 386px 381px;
+    background-image: url("images/speech2.png");
+    background-repeat: no-repeat;
+    background-size: 386px 381px;
     border: $comic-border;
     background-color: #E0E0E0;
     grid-area: f;
     display: grid;
-    grid-template-rows: 80px auto 263px;
-    grid-template-columns: 70px 95px 170px 166px;
+    // grid-template-rows: 80px auto 263px;
+    // grid-template-columns: 70px 95px 170px 166px;
+    grid-template-rows: 80px 140px 147px auto 187px;
+    grid-template-columns: 40px 90px 200px 30px 110px;
+
+    // .speech {
+    //   grid-column: 1 / 2;
+    //   grid-row: 1/ 3;
+    //   max-width: 370px;
+    // }
 
     p {
       font-size: 22px;
       grid-column: 2 / 4;
       grid-row: 2 / 3;
       margin: 0;
+      text-align: center;
     }
 
     .supes {
       max-width: 400px;
-      grid-column: 3 / 5;
-      grid-row: 3 / 4;
+      grid-column: 3 / 4;
+      grid-row: 4 / 5;
     }
   }
 
@@ -706,7 +718,7 @@ footer {
 .nny_outer,
 .platey_outer,
 footer {
-  display: none;
+  // display: none;
   box-sizing: border-box;
 }
 
@@ -723,15 +735,15 @@ footer {
 
         .topLeft {
           height: auto;
-          grid-template-rows: 40px 170px 156px;
+          grid-template-rows: 40px 170px 10px;
           grid-template-columns: 40px 22px 120px 96px;
-
-          .speech {
-            width: 220px;
-          }
+          background-size: 226px 221px;
+          // .speech {
+          //   width: 220px;
+          // }
 
           p {
-            font-size: 12px;
+            font-size: 13px;
           }
 
           .supes {
@@ -961,19 +973,20 @@ footer {
 
         .topLeft {
           height: auto;
-          grid-template-rows: 40px 160px 171px;
-          grid-template-columns: 50px 142px 20px 96px;
+          grid-template-rows: 40px 160px 70px;
+          grid-template-columns: 50px 112px 75px 96px;
+          background-size: 300px 272px;
 
-          .speech {
-            width: 250px;
-          }
+          // .speech {
+          //   width: 250px;
+          // }
 
           p {
-            font-size: 15px;
+            font-size: 18px;
           }
 
           .supes {
-            max-width: 220px;
+            max-width: 260px;
           }
         }
 
