@@ -553,9 +553,9 @@ section.contact {
 
 @media screen and (min-width: 1400px) {
   main {
-    margin: 0 0 3vw;
+    margin: 3vw 0;
   }
-  
+
   .flowers1 {
     grid-row: 1 / 4;
   }
