@@ -43,6 +43,11 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  margin: 0 0 1vw;
+  font-size: 14px;
+}
+
 a {
   color: #000000;
 }

@@ -1,0 +1,851 @@
+@font-face {
+    font-family: MarkPro;
+    src: url('./fonts/MarkPro.otf');
+}
+
+@font-face {
+    font-family: MarkPro;
+    font-weight: bold;
+    src: url('./fonts/MarkPro-Bold.otf');
+}
+
+@font-face {
+    font-family: MarkPro-Book;
+    src: url('./fonts/MarkPro-Book.otf');
+}
+
+@font-face {
+    font-family: Quarto;
+    src: url('./fonts/Quarto-Medium.otf');
+}
+
+@font-face {
+    font-family: Quarto;
+    font-weight: 900;
+    src: url('./fonts/Quarto-bold.otf');
+}
+
+@font-face {
+    font-family: Quarto;
+    font-weight: lighter;
+    src: url('./fonts/Quarto-Light.otf');
+}
+
+@font-face {
+    font-family: TradeGothic;
+    src: url('./fonts/TradeGothicLTPro.otf');
+}
+
+@font-face {
+    font-family: TradeGothic;
+    font-weight: 700;
+    src: url('./fonts/TradeGothicLTPro-Bold.otf');
+}
+
+@font-face {
+    font-family: TradeGothic;
+    font-weight: lighter;
+    src: url('./fonts/TradeGothicLTPro-Light.otf');
+}
+
+@font-face {
+    font-family: TradeGothicBdCn;
+    src: url('./fonts/TradeGothicLTPro-BdCn20.otf');
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'TradeGothicBdCn';
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+img {
+    font-size: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, footer {
+    margin: 0;
+    padding: 0;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.underlined {
+    border-bottom: 2px solid #7E84FA;
+}
+
+nav {
+    display: grid;
+    /* grid-template-columns: repeat(3, auto); */
+    grid-template-columns: repeat(2, auto);
+    /* width: 63vw; */
+    width: 40vw;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+nav div {
+    text-align: center;
+}
+
+nav .navGift {
+    width: 16vw;
+    margin-left: -1px;
+}
+
+nav .navService {
+    width: 9vw;
+}
+
+nav .navApp {
+    width: 7vw;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    width: 21vw;
+    text-align: center;
+    /* font-weight: bold; */
+    padding-bottom: 1vw;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #7E84FA;
+}
+
+header h1 {
+    font-family: Quarto;
+    text-align: center;
+}
+
+header p {
+    font-family: MarkPro;
+}
+
+.giftForm h2 {
+    font-family: Quarto;
+}
+
+.giftForm p:not(.button) {
+    font-family: MarkPro;
+}
+
+.button {
+  font-family: TradeGothicBdCn;
+  display: block;
+  color: #FFFFFF;
+  background-color: #7E84FA;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.holidays h2,
+.giftWrap h2,
+.servicing h2,
+.iosApp h2 {
+  font-family: Quarto;
+}
+
+.holidays .greyedOut {
+  opacity: 0.4;
+}
+
+
+.holidays .date,
+.giftWrap p,
+.servicing p,
+.giftWrap ul li,
+.servicing ul li,
+.iosApp p {
+    font-family: MarkPro;
+}
+
+.giftWrap ul li,
+.servicing ul li {
+    vertical-align: middle;
+}
+
+.servicing {
+    background-color: #FEF6E7;
+}
+
+.faqLink {
+    border-bottom: 1px solid #7E84FA;
+}
+
+.giftWrap ul li::before,
+.servicing ul li::before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 35px;
+    background-image: url(./imgs/6_checkmark.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    margin: 0 0 0 -40px;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #000000;
+}
+
+footer .instagramLogo {
+    width: 19px;
+    vertical-align: middle;
+}
+
+footer div a:not(.instagram) {
+    display: block;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+footer div a,
+footer address,
+footer p {
+    color: #FFFFFF;
+    font-family: MarkPro;
+    /* font-size: 12px; */
+}
+
+footer address {
+    font-style: normal;
+}
+
+
+/* DESKTOP ============================================================================================== */
+@media screen and (min-width: 601px) {
+    .desktop {
+        display: block;
+    }
+
+    .button {
+        display: block;
+        margin: 0;
+        width: 15vw;
+        padding: 16px 0 10px;
+        color: #FFFFFF;
+        background-color: #7E84FA;
+        text-align: center;
+        /* font-family: TradeGothic; */
+        font-weight: 700;
+        font-size: 1.4vw;
+    }
+
+    header {
+        background-image: url(./imgs/0_heroB.png);
+        height: 28vw;
+        background-size: 98vw;
+        margin: 15px 15px 0 15px;
+        background-repeat: no-repeat;
+        padding: 21vw 0 0;
+    }
+
+    /* .headerLogo {
+    font-family: Quarto;
+    font-size: 3vw;
+    margin: 0 0 20vw;
+
+  } */
+
+    header h1 {
+        font-size: 5vw;
+    }
+
+    header p {
+        font-size: 1.4vw;
+        text-align: center;
+        margin: 2.2vw auto 0;
+    }
+
+    nav {
+        padding: 5vw 0 0;
+    }
+
+    nav a {
+        font-size: 1.5vw;
+        letter-spacing: 2px;
+    }
+
+    .holidayTitle {
+        font-size: 1.4vw;
+        margin: 4vw auto 0;
+        width: 10vw;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .holidays,
+    .giftForm,
+    .servicing,
+    .iosApp {
+        display: grid;
+    }
+
+    .holidays {
+        grid-template-columns: repeat(3, 33vw);
+        text-align: center;
+        padding: 4vw 0 2.5vw;
+    }
+
+    .holidays .holidayIcon {
+        width: 6vw;
+        margin: 0 auto 3vw;
+    }
+
+    .holidays .thanksgiving,
+    .holidays .hanukkah,
+    .holidays .xmas {
+        width: 33vw;
+        position: relative;
+    }
+
+    .holidays .thanksgiving::after,
+    .holidays .hanukkah::after {
+        content: '';
+        display: inline-block;
+        height: 15vw;
+        width: 2px;
+        border-right: 2px solid #E9E9E9;
+        grid-column: 2/3;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .holidays h2 {
+        font-size: 3.5vw;
+        margin: 0 auto 1vw;
+    }
+
+    .holidays .gifts {
+        font-size: 1.3vw;
+        color: #575757;
+        letter-spacing: 1px;
+    }
+
+    .holidays .date {
+        font-size: 1.3vw;
+        margin: 0 auto 3vw;
+        color: #121212;
+        padding-top: 8px;
+    }
+
+
+    .giftForm,
+    .serviceStuff,
+    .iosApp {
+        margin: 0 0 15px;
+    }
+
+    ul.list-items li {
+        font-weight: 400;
+    }
+
+    .form,
+    .servicing,
+    .ios {
+        margin: 0 15px 0 0;
+    }
+
+    .carImg,
+    .giftWrap,
+    .memImg {
+        margin: 0 15px;
+    }
+
+    .giftForm,
+    .serviceStuff,
+    .iosApp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .giftForm img,
+    .iosApp img {
+        width: 50vw;
+    }
+
+    .giftForm .form,
+    .iosApp .ios {
+        padding: 3vw 0 0 5vw;
+        width: 42vw;
+    }
+
+    .giftForm .form .secIcon,
+    .iosApp .ios .secIcon {
+        width: 3vw;
+        margin: 0 auto 1vw;
+    }
+
+    .giftForm .form h3,
+    .serviceStuff .giftWrap h3,
+    .serviceStuff .servicing h3,
+    .iosApp .ios h3 {
+        font-size: 1.4vw;
+        font-weight: lighter;
+        letter-spacing: 1px;
+
+    }
+
+    .giftForm .form h3,
+    .giftForm .form h2,
+    .giftForm .form p,
+    .iosApp .ios h3,
+    .iosApp .ios h2,
+    .iosApp .ios p {
+        margin: 0 0 2vw;
+    }
+
+    .giftForm .form h3 {
+        width: 12vw;
+    }
+
+    .giftForm .form h2,
+    .serviceStuff .giftWrap h2,
+    .serviceStuff .servicing h2,
+    .iosApp .ios h2 {
+        font-size: 2.5vw;
+    }
+    .giftForm .form p,
+    .serviceStuff .giftWrap p,
+    .serviceStuff .servicing p,
+    .serviceStuff .giftWrap ul li,
+    .serviceStuff .servicing ul li,
+    .iosApp .ios p {
+        font-size: 1.2vw;
+    }
+
+
+    .serviceStuff .giftWrap {
+        background-image: url(./imgs/5_papersource_background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .serviceStuff .giftWrap,
+    .serviceStuff .servicing {
+        padding: 7vw 0 3.8vw;
+        text-align: center;
+    }
+
+    .serviceStuff .giftWrap {
+        width: 50vw;
+    }
+
+
+    .serviceStuff .giftWrap h3,
+    .serviceStuff .servicing h3,
+    .serviceStuff .giftWrap h2,
+    .serviceStuff .servicing h2 {
+        margin: 0 auto 2vw;
+
+    }
+
+    .serviceStuff .giftWrap h3,
+    .serviceStuff .servicing h3 {
+        width: 6vw;
+    }
+
+    .serviceStuff .giftWrap p,
+    .serviceStuff .servicing p {
+        margin: 0 0 3vw;
+    }
+
+    .serviceStuff .giftWrap ul,
+    .serviceStuff .servicing ul {
+        text-align: left;
+        width: 31vw;
+        margin: 0 auto;
+    }
+
+    .serviceStuff .giftWrap ul li,
+    .serviceStuff .servicing ul li {
+        margin: 0 0 1.5vw;
+    }
+
+    .iosApp .ios h3 {
+        width: 5vw;
+    }
+
+    footer {
+        background-color: #000000;
+        padding: 40px 0 0;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 10vw 23vw 8vw 15vw 22vw 21vw;
+    }
+
+    footer .footerLogo {
+        width: 150px;
+        padding-top:4px;
+    }
+
+    footer .footerLogoLink {
+        margin: 0 0 0 0;
+        grid-column: 2/2;
+    }
+
+    footer a,
+    footer address,
+    footer p {
+        font-size: 1.2vw;
+    }
+
+    footer .instagramLink {
+        margin: 0 0 1vw;
+    }
+
+    .mobile {
+        display: none;
+    }
+    footer .footerLogo {
+      width: 129px;
+    }
+}
+
+
+/* MOBILE ============================================================================================== */
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mob-nav {
+        background: #000000;
+        color: #ffffff;
+        padding-top: 7px;
+        padding-bottom: 5px;
+    }
+
+    .mob-nav a {
+        display: inline;
+        color: #ffffff;
+        text-align: center;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    nav.mobile {
+        text-align: center;
+    }
+
+    .centered {
+        display: inline-block;
+    }
+
+    .button {
+        margin: 0 auto;
+        width: 50vw;
+        padding: 14px 0 10px;
+    }
+
+    header .headerImg {
+        width: 100vw;
+    }
+
+    header {
+        background-image: none;
+    }
+
+    header h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    header p {
+        font-size: 4.3vw;
+        text-align: center;
+        margin: 0 0 15px;
+    }
+
+    .giftForm,
+    .carImg,
+    .holidays,
+    .giftWrap,
+    .servicing,
+    .memImg {
+        margin: 15px;
+    }
+
+    .giftForm {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .secIcon {
+        width: 13vw;
+        padding-bottom: 20px;
+    }
+
+    .giftForm h3 {
+        width: 35vw;
+        margin: 5px auto 22px;
+        font-size: 4vw;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+
+    .giftForm h2 {
+        margin: 22px auto;
+        font-size: 6vw;
+    }
+
+    .giftForm p {
+        font-size: 4.5vw;
+        margin: 15px auto 25px;
+    }
+
+    .carImg {
+        font-size: 0;
+    }
+
+    .carImg img,
+    .memImg img {
+        width: 90vw;
+    }
+
+    .holidays {
+        text-align: center;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    .holidays svg {
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        top: 50%;
+    }
+
+    .holidays .leftie {
+        left: 0;
+    }
+
+    img.leftie,
+    img.rightie {
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+    }
+
+    .holidays .rightie {
+        right: 0;
+    }
+
+    .holidays .thanksgiving,
+    .holidays .hanukkah,
+    .holidays .xmas {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .holidays h3 {
+        font-size: 4vw;
+        margin: 30px auto 42px;
+        width: 24vw;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+
+    .holidays .iconHolder {
+        height: 30vw;
+    }
+
+    .holidays .holidayIcon {
+        width: 25vw;
+    }
+
+    .holidays h2 {
+        font-size: 10vw;
+        margin: 30px auto 15px;
+    }
+
+    .holidays .gifts {
+        color: #575757;
+        font-size: 4vw;
+    }
+
+    .holidays .date {
+        color: #121212;
+        font-size: 5vw;
+        margin: 0 auto 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .holiday-headline {
+        padding-top: 40px;
+    }
+
+    .giftWrap {
+        background-image: url(./imgs/mobile/papersource.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 40px 0 65px;
+    }
+
+    .giftWrap h3 {
+        width: 18vw;
+        margin: 5px auto 22px;
+        font-size: 4vw;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+
+    .giftWrap h2 {
+        margin: 0 auto 22px;
+        font-size: 7vw;
+    }
+
+    .giftWrap p {
+        margin: 30px auto;
+        font-size: 4vw;
+    }
+
+    .giftWrap ul {
+        list-style-type: none;
+        text-align: left;
+        width: 73vw;
+        margin: 0 0 0 15vw;
+        padding: 0;
+    }
+
+    .giftWrap ul li {
+        margin: 0 auto 19px;
+        font-size: 4vw;
+    }
+
+    .servicing {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .servicing h3 {
+        width: 18vw;
+        margin: 5px auto 22px;
+        font-size: 4vw;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+
+    .servicing h2 {
+        margin: 0 auto 22px;
+        font-size: 7vw;
+    }
+
+    .servicing p {
+        margin: 30px auto;
+        font-size: 4vw;
+    }
+
+    .servicing ul {
+        list-style-type: none;
+        text-align: left;
+        width: 73vw;
+        margin: 0 0 0 15vw;
+        padding: 0;
+    }
+
+    .servicing ul li {
+        margin: 0 auto 19px;
+        font-size: 4vw;
+    }
+
+    ul.list-items li {
+        font-weight: 400;
+    }
+
+    .iosApp {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .iosApp .secIcon {
+        width: 9vw;
+
+    }
+
+    .iosApp h3 {
+        width: 14vw;
+        margin: 12px auto 22px;
+        font-size: 4vw;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+
+    .iosApp h2 {
+        margin: 0 auto 22px;
+        font-family: Quarto;
+        font-size: 7vw;
+    }
+
+    .iosApp p {
+        margin: 0 auto 30px;
+        font-size: 4vw;
+    }
+
+    .memImg {
+        font-size: 0;
+    }
+
+    /* .memImg img {
+    width: 100vw;
+    margin: 0;
+  } */
+
+    footer {
+        display: block;
+        text-align: center;
+        padding: 30px 0 30px;
+    }
+
+    .footerLogo {
+        width: 140px;
+    }
+
+    footer div,
+    footer .footerLogo {
+        margin: 0 0 25px;
+    }
+
+    footer div a {
+        margin: 0 0 5px;
+    }
+}

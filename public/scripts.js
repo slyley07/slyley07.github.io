@@ -43,7 +43,7 @@ var projects = [
   {
     'name': 'Jetblack Landing Pages',
     'className': 'jb',
-    'link': '',
+    'link': './jetblack1/index.html',
     'desc': 'These were simple one-off holiday landing pages that I built for Jetblack using HTML, CSS, and JavaScript.',
     'langs': [
       'HTML',
@@ -57,7 +57,10 @@ var projects = [
   {
     'name': 'FanDuel Landing Pages',
     'className': 'fd',
-    'link': '',
+    'link': [
+      './fanduel1/index.html',
+      './fanduel2/index.html'
+    ],
     'desc': 'For the 2019 NBA Playoffs, I built several landing pages for promotions that FanDuel ran with partner companies. These all use basic HTML, CSS, and JavaScript.',
     'langs': [
       'HTML',
@@ -71,8 +74,10 @@ var projects = [
 ];
 
 projects.forEach(project => {
-  if (project.link !== '') {
-    document.getElementsByClassName('project')[0].innerHTML += '<div class="' + project.className + '"><h4><a href="' + project.link + '">' + project.name + '</a></h4><p>' + project.desc + '</p></div>'
+  if (project.className === 'fd') {
+    document.getElementsByClassName('project')[0].innerHTML += '<div class="' + project.className + '"><h4>' + project.name + '</h4><h5><a href="' + project.link[0] + '" target="_blank">1</a> | <a href="' + project.link[1] + '" target="_blank">2</a></h5><p>' + project.desc + '</p></div>'
+  } else if (project.link !== '') {
+    document.getElementsByClassName('project')[0].innerHTML += '<div class="' + project.className + '"><h4><a href="' + project.link + '" target="_blank">' + project.name + '</a></h4><p>' + project.desc + '</p></div>'
   } else {
     document.getElementsByClassName('project')[0].innerHTML += '<div class="' + project.className + '"><h4 class="' + project.className + '">' + project.name + '</h4><p>' + project.desc + '</p></div>'
   }
