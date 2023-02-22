@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    color: #FFFFFF;
+    background-color: #23252C;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    background-color: #FFFFFF;
+    color: #918E9B;
+    border: 0;
+    border-radius: 0;
+    display: inline-block;
+}
+
+a {
+    color: #918E9B;
+    text-decoration: none;
+}
+
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+    letter-spacing: .06rem;
+    font-weight: 200;
+}
+
+.container {
+    background-color: #1A1B21;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 0 0 5px;
+}
+
+.container {
+    width: 60vw;    
+}
+
+.container,
+.headshot,
+.button-container,
+.info,
+.about,
+.interests,
+.footer {
+    max-width: 600px;
+    min-width: 350px;
+}
+
+.headshot {
+    margin: 0 auto;
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.info .info-container,
+.about,
+.info .button-container,
+.interests {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.info {
+    text-align: center;
+}
+
+.info .info-container h1,
+.info .info-container h3,
+.info .info-container h5 {
+    margin: 10px 0 0;
+}
+
+.info .button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+}
+
+.info .button-container a {
+    display: inline-block;
+    width: 115px;
+    border-radius: 5px; 
+}
+
+.info .button-container .email,
+.info .button-container .linkedin {
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    display: flex;
+}
+
+.info .button-container .email img,
+.info .button-container .linkedin img {
+    margin: 0 5px 0 0;
+    display: inline-block;
+}
+
+.info .button-container .email {
+    background-color: #D1D5DB;
+    color: #000000;
+}
+
+.info .button-container .linkedin {
+    background-color: #5093E2;
+    color: #FFFFFF;
+}
+
+.about h4,
+.about p,
+.interests h4,
+.interests h5 {
+    width: 80%;
+    margin: 25px auto 10px;
+}
+
+.interests p {
+    width: 80%;
+    padding-top: 0;
+    margin: 0 auto;
+}
+
+.footer {
+    margin: 15px 0 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer button {
+    background-color: #1A1B21;
+}
